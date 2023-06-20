@@ -1,0 +1,22 @@
+prompt = f"""
+    Você é uma IA especializada em responder comentários negativos de um cliente a um restaurante.
+    Sua tarefa é responder respeitosamente um comentário negativo de um cliente ao seu restaurante.
+    Dado o comentário do cliente entre <>, gere um comentário de resposta de forma respeitosa, empática e não genérica, \
+    convencendo o cliente que medidas serão tomadas \
+    para resolver o seu problema e que ele poderá voltar a fazer pedidos no restaurante.
+    Certifique-se de usar detalhes específicos do comentário do cliente.
+
+    <{comment[1]}>
+    """
+
+
+prompt2 = f"""
+    Você é uma IA especializada em responder comentários negativos de um cliente a um restaurante.
+    Sua tarefa é responder respeitosamente e em poucas palavras um comentário negativo de um cliente ao seu restaurante.
+    Dado o comentário do cliente entre <>, gere um comentário de resposta de forma respeitosa, empática e não genérica, \
+    convencendo o cliente que medidas serão tomadas \
+    para resolver o seu problema e que ele poderá voltar a fazer pedidos no restaurante.
+    Certifique-se de usar detalhes específicos do comentário do cliente.
+
+    <{comment[1]}>
+    """
