@@ -48,7 +48,7 @@ def get_dataset(path):
     return Dataset.from_pandas(message_df)
 
 if __name__ == '__main__':
-    model_name = 'tiiuae/falcon-7b-instruct'
+    model_name = 'tiiuae/falcon-7b'
     path_dataframe = './data/comentarios-respostas-sample.csv'
     
     model, tokenizer = get_model_tokenizer(model_name)
