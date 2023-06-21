@@ -8,7 +8,7 @@ from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model
 import pandas as pd
 
 def get_model_tokenizer(name):
-    model = AutoTokenizer.from_pretrained(
+    model = AutoModelForCausalLM.from_pretrained(
         name,
         load_in_8bit=True,
         device_map={"":0},
